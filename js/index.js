@@ -57,7 +57,7 @@ function init() {
         smokeParticles.push(particle);
     }
 
-    document.body.appendChild(renderer.domElement);
+    document.getElementById("myScene").appendChild(renderer.domElement);
 }
 
 function animate() {
