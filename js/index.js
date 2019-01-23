@@ -21,12 +21,12 @@ function init() {
 
     textGeo = new THREE.PlaneGeometry(300, 300);
     THREE.ImageUtils.crossOrigin = ''; //Need this to pull in crossdomain images from AWS
-    textTexture = THREE.ImageUtils.loadTexture('img/text.png');
-    textTexture.minFilter = THREE.LinearFilter;
-    textMaterial = new THREE.MeshLambertMaterial({ color: 0xffffff, opacity: 1, map: textTexture, transparent: true, blending: THREE.AdditiveBlending })
-    text = new THREE.Mesh(textGeo, textMaterial);
-    text.position.z = 800;
-    scene.add(text);
+    // textTexture = THREE.ImageUtils.loadTexture('img/text.png');
+    // textTexture.minFilter = THREE.LinearFilter;
+    // textMaterial = new THREE.MeshLambertMaterial({ color: 0xffffff, opacity: 1, map: textTexture, transparent: true, blending: THREE.AdditiveBlending })
+    // text = new THREE.Mesh(textGeo, textMaterial);
+    // text.position.z = 800;
+    // scene.add(text);
 
     light = new THREE.DirectionalLight(0xffffff, 1);
     light.position.set(-1, 0, 1);
@@ -66,6 +66,8 @@ function animate() {
     requestAnimationFrame(animate);
     evolveSmoke();
     render();
+    // renderer.setSize(window.innerWidth, window.innerHeight);
+    // document.body.appendChild(renderer.domElement);
 }
 
 function evolveSmoke() {
@@ -91,4 +93,15 @@ function render() {
     }
 
     renderer.render(scene, camera);
+}
+
+window.addEventListener( 'resize', onWindowResize, false );
+
+function onWindowResize(){
+
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize( window.innerWidth, window.innerHeight );
+
 }
