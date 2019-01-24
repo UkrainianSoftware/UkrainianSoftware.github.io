@@ -47,7 +47,7 @@ function init() {
             smokeRGB[c][p] = Math.random() * Math.PI;
         }
 
-        smokeMaterial = new THREE.MeshLambertMaterial({ color: 0x000000, map: smokeTexture, transparent: true });
+        smokeMaterial = new THREE.MeshLambertMaterial({color: 0x000000, map: smokeTexture, transparent: true});
 
         smokeMaterials[p] = smokeMaterial;
         var particle = new THREE.Mesh(smokeGeo, smokeMaterials[p]);
@@ -95,13 +95,13 @@ function render() {
     renderer.render(scene, camera);
 }
 
-window.addEventListener( 'resize', onWindowResize, false );
+window.addEventListener('resize', onWindowResize, false);
 
-function onWindowResize(){
+function onWindowResize() {
 
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
 
-    renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer.setSize(window.innerWidth, window.innerHeight);
 
 }
