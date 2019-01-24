@@ -141,3 +141,13 @@ html {
 li{
     float: left;
 }
+
+.tab-button{
+    text-transform: uppercase;
+}
+.about-us{
+    display: none;
+}
+.contacts{
+    display: none;
+}
