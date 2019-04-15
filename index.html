@@ -1,107 +1,383 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ukrainian Software Sevices</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" />
+		
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ukrainian Software Services</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<body>
 
-</head>
-<body>
-<div class="tabs-holder">
-    <ul class="tabrow">
-        <li class="tab-button selected" id="tab-1">Home</li>
+	<!-- HEADER start-->
+	
+	<header class="header">
+		<div class="container">
+			<a class="header__logo" href="/"><img src="img/white_Logo_USS.svg" alt="Logo"></a>
+			<div class="header__nav">
+				<ul class="menu">
+					<li><a href="#expertise" class="menu__item scroll">Expertise</a></li>
+					<li><a href="" class="menu__item">Projects</a></li>
+					<li><a href="" class="menu__item">Careers</a></li>
+					<li><a href="" class="menu__button button button_dark">Get in touch</a></li>
+				</ul>
 
-        <li class="tab-button" id="tab-2">About us</li>
-        <li class="tab-button" id="tab-3">Contacts</li>
-    </ul>
-</div>
-<div id="myScene" class="content rounded">
+				<div class="menu__toggle">
+					<span class="open-menu-btn">&#9776; <!-- Results in ☰ --></span>
+				</div>
+				
+				<ul class="menu menu_responsive">
+					<li><a href="#expertise" class="menu__item scroll">Expertise</a></li>
+					<li><a href="" class="menu__item">Projects</a></li>
+					<li><a href="" class="menu__item">Careers</a></li>
+					<li><a href="" class="menu__button button button_primary">Get in touch</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
 
-    <div id="inner-1" class="inner-content home">
-        <div class="content-title text-center">
-            <h1 class="title-1">Ukrainian Software Services</h1>
-            <h2 class="title-2">a development agency based in Kyiv</h2>
-        </div>
-        <div class="content-body">
-            <blockquote class="blockquote">
-                <p class="mb-0">
-                    Ukraine ranks 8th among the world's top ten countries with the fastest Internet access speed
-                </p>
-                <footer class="blockquote-footer">Wikipedia</footer>
-            </blockquote>
-            <blockquote class="blockquote">
-                <p class="mb-0">
-                    Ukraine ranks first worldwide in the number of C++ and Unity3D developers
-                    <footer class="blockquote-footer">Wikipedia</footer>
+	<!-- HEADER end-->
+	
+	<main>
 
-                </p>
-            </blockquote>
-            <blockquote class="blockquote">
-                <p class="mb-0">
-                   Ukraine is 3rd in the world by the number of certified technical specialists
-                    <footer class="blockquote-footer">N-iX</footer>
-                </p>
-            </blockquote>
-        </div>
+		<!-- INTRO section start-->
+		
+		<section class="intro">
+			<div class="container">
+				<h1 class="intro__heading like-h1">outsourcing<br>outstaffing</h1>
+				<div class="wrapper">
+					<p class="intro__subheading">services for various types <br>of software development.</p>
+					<a href="#about-us"><img class="arrow-down" src="img/icons/icon-arrow-down.png" alt="Arrow down"></a>
+				</div>
+				<div class="about" id="about-us">
+					<h2 class="about__heading like-h2">About us</h2>
+					<p class="paragraph">Ukrainian Software Services is a development agency based in Kyiv. Great companies are a product 
+						of great people. At USS, the most valuable asset we have is the relationship we hold within our team.</p>
+					<p class="paragraph">Our mission is to find clever technological solutions for complex business problems of our clients, 
+						encouraging innovations in business and society, increasing income of our business partners 
+						and our team and company creators.</p>
+					<p class="paragraph">Our experienced team of blockchain developers, cryptographers, software engineers and industry 
+						specialists need more players to assist with new projects. We’re big enough that the problems 
+						we have to solve are massive, but still small enough that we can move quickly and any one 
+						team player can have a big and lasting impact.</p>
+				</div>
+			</div>
+		</section>
 
-    </div>
-    <div id="inner-2" class="inner-content about-us">
-    	        <div class="content-title text-center">
-            <h1 class="title-1">About us</h1>
-        </div>
-    	            <blockquote class="blockquote">
+		<!-- INTRO section end-->
 
-    	                <p class="mb-10">
-                            Ukrainian Software Services is a development agency based in Kyiv.
-                        </p>
-                        <p class="mb-10">
-                            Our experienced team of blockchain developers, cryptographers, software engineers and industry specialists need more players to assist with new projects.
-                            We’re big enough that the problems we have to solve are massive, but still small enough that we can move quickly and any one team player can have a big and lasting impact.
-                        </p>
-                        <p class="mb-10">
-                            If you are looking to be a part of something special that is already fundamentally changing the world,
-                            contribute to a decentralized economy and drive innovation then we’d like you to join our family!
-                        </p>
-                    </blockquote>
+		<!-- JOIN OUR TEAM section start-->
+		
+		<section class="white-section">
+			<div class="container">
+				<div class="join-team">
+					<h4 class="join-team__heading like-h4">Join Our Team</h4>
+					<p class="paragraph">If you are looking to be a part of something special that is already 
+						fundamentally changing the world, contribute to a decentralized
+						economy and drive innovation then we’d like you to join our family!</p>
+					<a href="" class="button button_dark">View vacancies</a>
+				</div>
+			</div>
+		</section>
 
-    </div>
-    <div id="inner-3" class="inner-content contacts">
-        <div class="content-title text-center">
-            <h1 class="title-1">Contacts</h1>
-        </div>
-        <p class="contact">albert@ukrainiansoftware.com</p>
-    </div>
-</div>
-</div>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js'></script>
-<script src="js/index.js"></script>
+		<!-- JOIN OUR TEAM section end -->
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-    $(function () {
-        $("li").click(function (e) {
-            e.preventDefault();
-            $("li").removeClass("selected");
-            $(this).addClass("selected");
-            let selector = "\#inner-" + this.id.substr(4);
-            $(".inner-content").css("display", "none");
-            $(selector).css("display", "block");
-        });
-    });
-</script>
-</body>
+		<!-- EXPERTISE section start -->
+		
+		<section class="technology">
+			<div class="container">
+				<div class="expertise" id="expertise">
+					<h2 class="expertise__heading like-h2">Our Expertise</h2>
+					<p class="expertise__subheading subheading">We are passionate about what we are doing that’s why we 
+						are striving to ensure the high quality of the solutions we develop.</p>
+					<div class="display-flex wrap">
+						<div class="expertise-item">
+							<h4 class="expertise-item__heading like-h4">Web & Mobile Development</h4>
+							<p class="paragraph">We have an excellent knowledge of Windows UI principles, WinRT core 
+								and great experience in creating user-friendly applications.</p>
+						</div>
+						<div class="expertise-item">
+							<h4 class="expertise-item__heading like-h4">Blockchain Development</h4>
+							<p class="paragraph">Every cryptocurrency is built on what's known as Distributed Ledger 
+								Technology (DLT), and blockchain is the most popular form of it.</p>
+						</div>
+					</div>
+					<div class="display-flex wrap">
+						<div class="expertise-item">
+							<h4 class="expertise-item__heading like-h4">UI/UX Design </h4>
+							<p class="paragraph">We are able to apply valuable knowledge to design user-friendly apps 
+								and sites to our customers and their users.</p>
+						</div>
+						<div class="expertise-item">
+							<h4 class="expertise-item__heading like-h4">Quality Assurance</h4>
+							<p class="paragraph">We combine workable methodologies and business domain expertise of 
+								120-plus skilled software program specialists to deliver solutions.</p>
+						</div>
+					</div>
+				</div>
+				<!--slider start-->
+				<div class="technology__slider slider">
+					<div class="responsive-slider">
+						<div class="slide">
+							<div class="logo">
+								<img src="img/logos/scala.png" alt="Scala logo">
+							</div>
+						</div>
+						<div class="slide">
+							<div class="logo">
+								<img src="img/logos/java.png" alt="Java logo">
+							</div>
+						</div>
+						<div class="slide">
+							<div class="logo">
+								<img src="img/logos/react.png" alt="React logo">
+							</div>
+						</div>
+						<div class="slide">
+							<div class="logo">
+								<img src="img/logos/aws.png" alt="AWS logo">
+							</div>
+						</div>
+						<div class="slide">
+							<div class="logo">
+								<img src="img/logos/angular.png" alt="Angular logo">
+							</div>
+						</div>
+						<div class="slide">
+							<div class="logo">
+								<img src="img/logos/scala.png" alt="Scala logo">
+							</div>
+						</div>
+						<div class="slide">
+							<div class="logo">
+								<img src="img/logos/java.png" alt="Java logo">
+							</div>
+						</div>
+						<div class="slide">
+							<div class="logo">
+								<img src="img/logos/react.png" alt="React logo">
+							</div>
+						</div>
+						<div class="slide">
+							<div class="logo">
+								<img src="img/logos/aws.png" alt="AWS logo">
+							</div>
+						</div>
+						<div class="slide">
+							<div class="logo">
+								<img src="img/logos/angular.png" alt="Angular logo">
+							</div>
+						</div>
+						<div class="slide">
+							<div class="logo">
+								<img src="img/logos/scala.png" alt="Scala logo">
+							</div>
+						</div>
+						<div class="slide">
+							<div class="logo">
+								<img src="img/logos/java.png" alt="Java logo">
+							</div>
+						</div>
+						<div class="slide">
+							<div class="logo">
+								<img src="img/logos/react.png" alt="React logo">
+							</div>
+						</div>
+						<div class="slide">
+							<div class="logo">
+								<img src="img/logos/aws.png" alt="AWS logo">
+							</div>
+						</div>
+						<div class="slide">
+							<div class="logo">
+								<img src="img/logos/angular.png" alt="Angular logo">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--slider end-->
+			</div>
+		</section>
+
+		<!-- EXPERTISE section end -->
+
+		<!-- REVIEWS section start -->
+		
+		<section class="reviews">
+			<div class="container">
+				<!--slider start-->
+				<div class="slider">
+					<div class="single-slider">
+						<div class="review slide">
+							<p class="review__text subheading">Albert is a really smart programmer, he is a very hard 
+								working individual with an very inquisitive mind that fuels his curiosity to keep up to
+								date on any programming, math and science related knowledge. He is a great asset for 
+								any team that lucky enough to have him.</p>
+							<p class="review__author">Daniel Barrero</p>
+							<p class="paragraph">Graphics programmer at Relic Entertainment</p>
+						</div>
+						<div class="review slide">
+							<p class="review__text subheading">Albert is a really smart programmer, he is a very hard
+								working individual with an very inquisitive mind that fuels his curiosity to keep up to
+								date on any programming, math and science related knowledge. He is a great asset for
+								any team that lucky enough to have him.</p>
+							<p class="review__author">Daniel Barrero</p>
+							<p class="paragraph">Graphics programmer at Relic Entertainment</p>
+						</div>
+						<div class="review slide">
+							<p class="review__text subheading">Albert is a really smart programmer, he is a very hard
+								working individual with an very inquisitive mind that fuels his curiosity to keep up to
+								date on any programming, math and science related knowledge. He is a great asset for
+								any team that lucky enough to have him.</p>
+							<p class="review__author">Daniel Barrero</p>
+							<p class="paragraph">Graphics programmer at Relic Entertainment</p>
+						</div>
+					</div>
+				</div>
+				<!--slider end-->
+			</div>
+		</section>
+
+		<!-- REVIEWS section end -->
+
+		<!-- CONTACT US section start -->
+		
+		<section class="contact-us">
+			<div class="container display-flex wrap">
+				<div class="text-block">
+					<h2 class="text-block__heading like-h2">Let’s talk business</h2>
+					<p class="subheading">The First Step to Your Business Success! Start work with Us! Your software vision is 
+						about to be realized.</p>
+				</div>
+				<div class="form-block">
+					<h3 class="form-block__heading like-h3">Get in touch</h3>
+					<p class="form-block__subheading paragraph">Interested in working together? We’d love to hear from you. Please allow a 
+					couple days for us to respond.</p>
+					<form class="form">
+						<input type="text" placeholder="Your Name (optional)" class="form__item input">
+						<input type="email" placeholder="Your E-mail Address" required class="form__item input">
+						<textarea placeholder="Enter Your Message" class="form__item textarea" rows="1"></textarea>
+						<input type="submit" value="Send Message" class="form__item button button_light">
+					</form>
+				</div>
+			</div>
+		</section>
+		
+		<!-- CONTACT US section end -->
+
+		<!-- FOOTER start -->
+		
+		<footer class="footer">
+			<div class="container">
+				<a class="footer__logo" href="/"><img src="img/white_Logo_USS.svg" alt="Logo"></a>
+				<div class="footer__information display-flex">
+					<div class="information display-flex">
+						<div class="icon"><img src="img/icons/icon-mail.png" alt="Icon mail"></div>
+						<div>
+							<p class="paragraph">hello@ukrainiansoftware.com</p>
+							<p class="paragraph">career@ukrainiansoftware.com</p>
+						</div>
+					</div>
+					<div class="information display-flex">
+						<div class="icon"><img src="img/icons/icon-location.png" alt="Icon mail"></div>
+						<div>
+							<p class="paragraph">Mykola Amosov Street, 12,</p>
+							<p class="paragraph">Kyiv, Ukraine, 03141</p>
+						</div>
+					</div>
+					<div class="information display-flex">
+						<div class="icon"><img src="img/icons/icon-phone.png" alt="Icon mail"></div>
+						<div>
+							<p class="paragraph">+38 063 573 78 84</p>
+							<p class="paragraph">+38 067 654 00 99</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- FOOTER end -->
+		
+	</main>
+		<!--//= template/footer.html-->
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+	
+	<script>
+		$(document).ready(function () {
+			
+			var menuWrapper = $('.menu_responsive');
+			var openMenuBtn = $('.open-menu-btn');
+			var menuItem = $('.menu__item');
+
+			openMenuBtn.unbind().click(function () {
+				openMenuBtn.toggleClass('active');
+				menuWrapper.toggleClass('open')
+			});
+
+			menuItem.click(function () {
+				menuWrapper.removeClass('open');
+				openMenuBtn.removeClass('active')
+			});
+			
+			$('.responsive-slider').slick({
+				arrows: false,
+				dots: true,
+				infinite: true,
+				speed: 1000,
+				autoplay: true,
+				autoplaySpeed: 6000,
+				slidesToShow: 5,
+				slidesToScroll: 5,
+				responsive: [
+					{
+						breakpoint: 1025,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 3
+						}
+					},
+					{
+						breakpoint: 767,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2
+						}
+					}
+				]
+			});
+
+			$('.single-slider').slick({
+				arrows: false,
+				dots: true,
+				infinite: true,
+				speed: 1000,
+				autoplay: true,
+				autoplaySpeed: 6000,
+				slidesToShow: 1,
+				slidesToScroll: 1
+			});
+
+			$('a[href*="#"]').on('click', function (e) {
+				e.preventDefault();
+				e.stopPropagation();
+				var target = $(this).attr('href');
+				$(target).velocity('scroll', {
+					duration: 1500,
+					offset: 0,
+					easing: 'ease-in-out'
+				});
+			});
+
+			var slicknav = $('#menu').slicknav('toggle');
+		})
+	</script>
+	</body>
 </html>
