@@ -63,3 +63,10 @@
   src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff2"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
   font-weight: bold;
   font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: local("☺"), url("../fonts/ProximaNova-Regular.woff") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff2"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal; }
