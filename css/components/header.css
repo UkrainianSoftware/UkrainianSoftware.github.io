@@ -101,12 +101,12 @@
     top: 75px; }
     .menu_responsive.open {
       display: inline-block;
-      padding: 15px 0; }
+      padding: 10px 0; }
       .menu_responsive.open .menu__item {
         display: block;
         color: #1ea6ab;
         margin-left: 0;
-        padding: 10px 25px;
+        padding: 12px 35px;
         font-weight: bold; }
         .menu_responsive.open .menu__item::before {
           content: none; }

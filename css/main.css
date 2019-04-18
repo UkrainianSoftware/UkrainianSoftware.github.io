@@ -457,10 +457,18 @@ textarea::-webkit-input-placeholder {
 #before-load i {
   font-size: 60px;
   position: absolute;
-  left: 50%;
+  left: -webkit-calc(50% - 30px);
+  left: calc(50% - 30px);
   top: 50%;
-  margin: -70px 0 0 -70px;
-  color: #020204; }
+  color: #020204;
+  display: block;
+  max-width: 60px;
+  width: 100%; }
+
+@media all and (max-width: 639px) {
+  #before-load i {
+    font-size: 35px;
+    max-width: 35px; } }
 
 /* -------------------------- reset -------------------------------------- */
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -891,12 +899,12 @@ textarea {
     top: 75px; }
     .menu_responsive.open {
       display: inline-block;
-      padding: 15px 0; }
+      padding: 10px 0; }
       .menu_responsive.open .menu__item {
         display: block;
         color: #1ea6ab;
         margin-left: 0;
-        padding: 10px 25px;
+        padding: 12px 35px;
         font-weight: bold; }
         .menu_responsive.open .menu__item::before {
           content: none; }
@@ -1264,7 +1272,6 @@ textarea {
       top: -17%; }
     .intro__heading {
       line-height: 33px;
-      margin-left: 0;
       margin-bottom: 10px; }
       .intro__heading::before {
         font-size: 68px;
@@ -1276,9 +1283,9 @@ textarea {
         height: 160px;
         bottom: -25px; }
     .intro .wrapper {
-      max-width: 155px;
-      margin-left: -webkit-calc(100% - 155px - 27px);
-      margin-left: calc(100% - 155px - 27px);
+      max-width: 165px;
+      margin-left: -webkit-calc(100% - 165px - 27px);
+      margin-left: calc(100% - 165px - 27px);
       margin-bottom: 75px; }
     .intro .about {
       max-width: -webkit-calc(100% + 30px);
@@ -1288,6 +1295,20 @@ textarea {
       margin-right: -15px; }
   .about .paragraph {
     margin-bottom: 10px; } }
+
+@media all and (max-width: 375px) {
+  .intro::before {
+    left: -43%;
+    top: -14%; }
+  .intro__heading {
+    margin-left: 15px; } }
+
+@media all and (max-width: 359px) {
+  .intro::before {
+    left: -41%;
+    top: -10%; }
+  .intro__heading {
+    margin-left: 0; } }
 
 /* -------- SECOND SECTION (WHITE-SECTION) - JOIN TEAM
 ---------------------------------------------------------------------------- */
@@ -1871,15 +1892,17 @@ textarea {
     padding: 0 20px 45px 30px; }
     .vacancy__information .title {
       font-size: 20px; }
-  .vacancy .dropdown-form::before {
-    width: -webkit-calc(100% + 50px);
-    width: calc(100% + 50px);
-    left: -30px; }
-  .vacancy .dropdown-form.active .apply {
-    font-size: 20px;
-    line-height: 24px; }
-  .vacancy .dropdown-form .inputfile + label {
-    width: 100%; } }
+  .vacancy .dropdown-form {
+    margin-left: -10px; }
+    .vacancy .dropdown-form::before {
+      width: -webkit-calc(100% + 40px);
+      width: calc(100% + 40px);
+      left: -20px; }
+    .vacancy .dropdown-form.active .apply {
+      font-size: 20px;
+      line-height: 24px; }
+    .vacancy .dropdown-form .inputfile + label {
+      width: 100%; } }
 
 /* -------- LAST SECTION (CONTACT-US-CAREERS)
 ---------------------------------------------------------------------------- */
