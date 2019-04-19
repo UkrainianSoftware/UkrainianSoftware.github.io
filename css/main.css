@@ -1853,7 +1853,8 @@ textarea {
       left: -95px;
       border-top: 1px dashed #6e6e70; }
     .vacancy .dropdown-form .apply {
-      margin-top: 50px; }
+      margin-top: 50px;
+      cursor: pointer; }
     .vacancy .dropdown-form .form__item {
       margin-bottom: 30px; }
     .vacancy .dropdown-form .form .button {
