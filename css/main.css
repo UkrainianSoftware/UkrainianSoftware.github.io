@@ -470,6 +470,11 @@ textarea::-webkit-input-placeholder {
     font-size: 35px;
     max-width: 35px; } }
 
+/* -------------------------- form submit -------------------------------------- */
+.site .site-frame .form-status-footer {
+  opacity: 0;
+  height: 0; }
+
 /* -------------------------- reset -------------------------------------- */
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
