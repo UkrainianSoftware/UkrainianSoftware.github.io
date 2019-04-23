@@ -155,6 +155,9 @@ img {
 .hide {
   display: none; }
 
+.hidden {
+  overflow: hidden; }
+
 .container {
   max-width: 1170px;
   width: 100%;
@@ -285,15 +288,20 @@ img {
     .slick-dots li.slick-active {
       background-color: #1ea6ab; }
 
-@media all and (max-width: 767px) {
-  .slick-dots li {
-    width: 10px;
-    height: 10px;
-    margin: 0 5px; }
-    .slick-dots li button {
+/* @media all and (max-width: $screen-xs) {
+  .slick-dots {
+    li {
       width: 10px;
-      height: 10px; } }
-
+      height: 10px;
+      margin: 0 5px;
+      
+      button {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+} */
 /* -------------------------- form -------------------------------------- */
 .input,
 .textarea {
@@ -846,13 +854,12 @@ textarea {
       display: none; }
   .menu__toggle {
     display: none;
-    height: 30px;
-    background: transparent;
-    font-size: 24px;
-    color: #fff;
-    text-align: center;
-    line-height: 30px;
-    margin-left: 30px; }
+    margin-left: 30px;
+    z-index: 100; }
+    .menu__toggle .open-menu-btn.active img {
+      display: none; }
+    .menu__toggle .open-menu-btn.active .hide {
+      display: block; }
   .menu__item {
     color: #fff;
     text-transform: uppercase;
@@ -894,27 +901,24 @@ textarea {
     display: none; }
   .menu__toggle {
     display: block; }
-    .menu__toggle .open-menu-btn.active {
-      color: #1ea6ab; }
   .menu_responsive {
     display: none;
-    position: absolute;
-    background: #fff;
-    right: 8%;
-    top: 75px; }
+    position: fixed;
+    background: #020204;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0; }
     .menu_responsive.open {
       display: inline-block;
-      padding: 10px 0; }
+      padding: 90px 0 25px; }
       .menu_responsive.open .menu__item {
-        display: block;
-        color: #1ea6ab;
-        margin-left: 0;
-        padding: 12px 35px;
-        font-weight: bold; }
-        .menu_responsive.open .menu__item::before {
-          content: none; }
-        .menu_responsive.open .menu__item.active {
-          color: #020204; }
+        display: inline-block;
+        color: #fff;
+        font-size: 20px;
+        font-family: "Montserrat-Light", sans-serif;
+        margin-left: 10%;
+        margin-bottom: 40px; }
   .header .container {
     max-width: 89%; }
   .header__logo {
@@ -935,10 +939,7 @@ textarea {
   .header__logo {
     max-width: 105px; }
   .menu__button {
-    display: none; }
-  .menu_responsive {
-    top: 55px;
-    right: 17px; } }
+    display: none; } }
 
 /* -------------------------- colors -------------------------------------- */
 /* -------------------------- font-family -------------------------------------- */
@@ -1048,7 +1049,8 @@ textarea {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    margin-left: 0; }
   .information {
     margin-left: 0;
     margin-bottom: 15px; }
@@ -1073,13 +1075,15 @@ textarea {
     padding-bottom: 0; }
   .footer__logo {
     max-width: 155px;
-    margin-bottom: 45px; }
+    margin-bottom: 40px;
+    margin-left: 5%; }
   .footer__information {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    margin-left: 5%; }
   .information {
     margin-left: 0;
     margin-bottom: 20px;
@@ -1087,8 +1091,13 @@ textarea {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .information:last-child {
+      margin-bottom: 40px; }
     .information .icon {
-      max-width: 30px; } }
+      max-width: 38px; }
+    .information .paragraph {
+      font-size: 16px;
+      line-height: 26px; } }
 
 /* -------- FIRST SECTION - INTRO
 ---------------------------------------------------------------------------- */
@@ -1703,13 +1712,13 @@ textarea {
     padding: 40px 0;
     background-position: bottom; }
     .contact-us .text-block {
-      max-width: 85%;
+      max-width: 90%;
       padding-right: 0;
       margin: auto; }
       .contact-us .text-block__heading {
         margin-bottom: 35px; }
     .contact-us .form-block {
-      max-width: 85%;
+      max-width: 90%;
       left: 0;
       top: 0;
       margin: 40px auto 0;
@@ -1917,7 +1926,6 @@ textarea {
 /* -------- LAST SECTION (CONTACT-US-CAREERS)
 ---------------------------------------------------------------------------- */
 .contact-us-career .text-block {
-  max-width: 81%;
   padding-right: 0; }
 
 @media all and (max-width: 1024px) {

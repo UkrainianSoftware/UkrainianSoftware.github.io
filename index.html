@@ -30,12 +30,17 @@
 				</ul>
 
 				<div class="menu__toggle">
-					<span class="open-menu-btn">&#9776; <!-- Results in ☰ --></span>
+					<span class="open-menu-btn">
+                        <img src="img/icons/icon-menu-open.png" alt="Open menu">
+                        <img src="img/icons/icon-menu-close.png" alt="Close menu" class="hide">
+                    </span>
 				</div>
 				
 				<ul class="menu menu_responsive">
+                    <li><a href="/" class="menu__item active">Home</a></li>
 					<li><a href="#expertise" class="menu__item scroll">Expertise</a></li>
 					<li><a href="careers.html" class="menu__item">Careers</a></li>
+                    <li><a href="#contacts" class="menu__item">Get in touch</a></li>
 				</ul>
 			</div>
 		</div>
@@ -321,12 +326,14 @@
 
 			openMenuBtn.unbind().click(function () {
 				openMenuBtn.toggleClass('active');
-				menuWrapper.toggleClass('open')
+				menuWrapper.toggleClass('open');
+				$('body').toggleClass('hidden')
 			});
 
 			menuItem.click(function () {
 				menuWrapper.removeClass('open');
-				openMenuBtn.removeClass('active')
+				openMenuBtn.removeClass('active');
+				$('body').removeClass('hidden')
 			});
 			
 			// slider with logos

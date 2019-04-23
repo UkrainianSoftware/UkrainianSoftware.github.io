@@ -29,13 +29,18 @@
 					<li><a href="index.html#contacts" class="menu__button button button_dark">Get in touch</a></li>
 				</ul>
 
-				<div class="menu__toggle">
-					<span class="open-menu-btn">&#9776; <!-- Results in ☰ --></span>
-				</div>
+                <div class="menu__toggle">
+					<span class="open-menu-btn">
+                        <img src="img/icons/icon-menu-open.png" alt="Open menu">
+                        <img src="img/icons/icon-menu-close.png" alt="Close menu" class="hide">
+                    </span>
+                </div>
 				
 				<ul class="menu menu_responsive">
+                    <li><a href="index.html" class="menu__item">Home</a></li>
 					<li><a href="index.html#expertise" class="menu__item">Expertise</a></li>
-					<li><a href="careers.html" class="menu__item">Careers</a></li>
+					<li><a href="careers.html" class="menu__item active">Careers</a></li>
+                    <li><a href="index.html#contacts" class="menu__item">Get in touch</a></li>
 				</ul>
 			</div>
 		</div>
@@ -291,15 +296,17 @@
 			var openMenuBtn = $('.open-menu-btn');
 			var menuItem = $('.menu__item');
 
-			openMenuBtn.unbind().click(function () {
-				openMenuBtn.toggleClass('active');
-				menuWrapper.toggleClass('open')
-			});
+            openMenuBtn.unbind().click(function () {
+                openMenuBtn.toggleClass('active');
+                menuWrapper.toggleClass('open');
+                $('body').toggleClass('hidden')
+            });
 
-			menuItem.click(function () {
-				menuWrapper.removeClass('open');
-				openMenuBtn.removeClass('active')
-			});
+            menuItem.click(function () {
+                menuWrapper.removeClass('open');
+                openMenuBtn.removeClass('active');
+                $('body').removeClass('hidden')
+            });
 			
 			// breadcrumbs
 
