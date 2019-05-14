@@ -1734,9 +1734,9 @@ textarea {
       font-size: 20px; } }
 
 /* ---------------------------------------------------------------------------- 
----------------------------------------------------------------------------- 
+------------------------------------------------------------------------------- 
  								 PAGE 'CAREERS'
- ---------------------------------------------------------------------------- 
+----------------------------------------------------------------------------- 
 ---------------------------------------------------------------------------- */
 /* -------- FIRST SECTION (INTRO-CAREERS)
 ---------------------------------------------------------------------------- */
@@ -1923,7 +1923,140 @@ textarea {
     .vacancy .dropdown-form .inputfile + label {
       width: 100%; } }
 
-/* -------- LAST SECTION (CONTACT-US-CAREERS)
+/* -------- THIRD (CONTACT-US-GUIDE)
+---------------------------------------------------------------------------- */
+.guide {
+  padding-bottom: 100px; }
+  .guide__heading {
+    margin-bottom: 70px; }
+  .guide .row {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+.guide-item {
+  width: -webkit-calc(20% - 20px);
+  width: calc(20% - 20px);
+  -webkit-box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.2);
+  padding: 40px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
+  .guide-item__index {
+    display: block;
+    position: absolute;
+    top: -22px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 3px solid #bbe4e6;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #020204;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 20px;
+    background-color: #fff; }
+  .guide-item__condition {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Montserrat-Regular", sans-serif;
+    text-align: center; }
+  .guide-item:after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-top: 3px double #1ea6ab;
+    position: absolute;
+    right: -25px; }
+  .guide-item:last-child:after {
+    content: none; }
+  .guide-item_1 {
+    -webkit-animation: move-in-steps 1s 0s ease-in-out;
+            animation: move-in-steps 1s 0s ease-in-out; }
+  .guide-item_2 {
+    -webkit-animation: move-in-steps 1s 1s ease-in-out;
+            animation: move-in-steps 1s 1s ease-in-out; }
+  .guide-item_3 {
+    -webkit-animation: move-in-steps 1s 2s ease-in-out;
+            animation: move-in-steps 1s 2s ease-in-out; }
+  .guide-item_4 {
+    -webkit-animation: move-in-steps 1s 3s ease-in-out;
+            animation: move-in-steps 1s 3s ease-in-out; }
+  .guide-item_5 {
+    -webkit-animation: move-in-steps 1s 4s ease-in-out;
+            animation: move-in-steps 1s 4s ease-in-out; }
+
+@-webkit-keyframes move-in-steps {
+  0% {
+    background: #fff; }
+  100% {
+    background: #bbe4e6; } }
+
+@keyframes move-in-steps {
+  0% {
+    background: #fff; }
+  100% {
+    background: #bbe4e6; } }
+
+@media all and (max-width: 812px) {
+  .guide {
+    padding-bottom: 50px; }
+    .guide .row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+  .guide-item {
+    width: 250px;
+    margin-bottom: 40px; }
+    .guide-item:after {
+      right: 0;
+      left: 0;
+      margin: auto;
+      width: 3px;
+      height: 25px;
+      border-left: 3px double #1ea6ab;
+      border-top: none;
+      bottom: -25px; } }
+
+@media all and (max-width: 767px) {
+  .guide {
+    padding-bottom: 30px; }
+    .guide__heading {
+      margin-bottom: 40px; }
+  .guide-item {
+    padding: 35px 15px 20px;
+    margin-bottom: 32px; }
+    .guide-item__index {
+      width: 35px;
+      line-height: 35px;
+      top: -18px;
+      font-size: 16px; }
+    .guide-item__condition {
+      font-size: 14px; } }
+
+/* -------- FOURTH (CONTACT-US-CAREERS)
 ---------------------------------------------------------------------------- */
 .contact-us-career .text-block {
   padding-right: 0; }
