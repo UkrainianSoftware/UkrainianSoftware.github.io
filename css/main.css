@@ -158,6 +158,9 @@ img {
 .hidden {
   overflow: hidden; }
 
+.full-width {
+  width: 100%; }
+
 .container {
   max-width: 1170px;
   width: 100%;
@@ -968,13 +971,21 @@ textarea {
     display: block; }
 
 .information {
-  margin-left: 60px; }
+  margin-left: 50px; }
   .information:first-child {
     margin-left: 0; }
   .information .paragraph {
     color: #fff; }
+    .information .paragraph .social {
+      color: #fff;
+      cursor: pointer;
+      outline: none; }
+    .information .paragraph .fab {
+      color: #fff;
+      font-size: 18px;
+      padding-right: 20px; }
   .information .icon {
-    margin-right: 20px;
+    margin-right: 15px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -983,10 +994,17 @@ textarea {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .information .icon .far {
+      color: #fff;
+      font-size: 24px; }
     .information .icon img {
-      max-height: 40px;
+      max-height: 25px;
+      max-width: 25px;
       -o-object-fit: contain;
          object-fit: contain; }
+    .information .icon_small img {
+      max-width: 18px;
+      max-height: 18px; }
 
 @media all and (max-width: 1100px) {
   .information {
@@ -1001,9 +1019,11 @@ textarea {
     margin-left: 35px; }
     .information .icon {
       margin-right: 8px;
-      max-width: 35px; }
+      max-width: 15px; }
       .information .icon img {
-        width: 100%; } }
+        width: 100%; }
+    .information .paragraph .fab {
+      padding-right: 8px; } }
 
 @media all and (max-width: 985px) {
   .information {
@@ -1027,13 +1047,16 @@ textarea {
     margin-left: 0;
     margin-bottom: 15px; }
     .information .icon {
-      max-width: 30px;
+      max-width: 17px;
       width: 100%; }
       .information .icon img {
         width: 100%; }
     .information .paragraph {
       font-size: 15px;
-      line-height: 17px; } }
+      line-height: 17px; }
+      .information .paragraph .fab {
+        padding-right: 10px;
+        font-size: 17px; } }
 
 @media all and (max-width: 767px) {
   .information .paragraph {
@@ -1055,11 +1078,12 @@ textarea {
     margin-left: 0;
     margin-bottom: 15px; }
     .information .icon {
-      max-width: 20px;
       margin-right: 10px; }
     .information .paragraph {
       font-size: 14px;
-      line-height: 16px; } }
+      line-height: 16px; }
+      .information .paragraph .fab {
+        padding-right: 12px; } }
 
 @media all and (max-width: 359px) {
   .footer .container {
@@ -1093,8 +1117,6 @@ textarea {
             align-items: center; }
     .information:last-child {
       margin-bottom: 40px; }
-    .information .icon {
-      max-width: 38px; }
     .information .paragraph {
       font-size: 16px;
       line-height: 26px; } }
