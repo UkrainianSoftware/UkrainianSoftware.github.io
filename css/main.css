@@ -1186,7 +1186,7 @@ textarea {
     position: absolute;
     top: -400px;
     left: -290px;
-    background: url("../img/intro-bg-top.png") no-repeat;
+    background: url("../img/galaxy.png") no-repeat;
     -webkit-background-size: contain;
             background-size: contain;
     z-index: -1; }
@@ -2080,7 +2080,13 @@ textarea {
 
 /* -------- FOURTH (CONTACT-US-CAREERS)
 ---------------------------------------------------------------------------- */
+.contact-us-career {
+  background-image: url("../img/contact-us-career-bg.png");
+  background-repeat: no-repeat;
+  background-position: right; }
+
 .contact-us-career .text-block {
+  max-width: 80%;
   padding-right: 0; }
 
 @media all and (max-width: 1024px) {
