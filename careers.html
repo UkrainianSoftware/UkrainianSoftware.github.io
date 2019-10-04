@@ -76,9 +76,11 @@
         <section class="vacancy">
             <div class="container">
 				<!--dropdown start-->
-                <div class="dropdown wow flipInX center"  data-wow-duration="1.2s">
+                <div id="xamarin-developer" class="dropdown wow flipInX center"  data-wow-duration="1.2s">
                     <div class="vacancy__item dropdown-item display-flex align-center justify-space-between">
-                        <h4 class="like-h4">Xamarin Developer</h4>
+						<a href="#xamarin-developer">
+							<h4 class="like-h4">Xamarin Developer</h4>
+						</a>
                         <div class="icon">
                             <span>+</span>
                             <span class="hide">−</span>
@@ -126,9 +128,11 @@
                 </div>
 				<!--dropdown end-->
 				<!--dropdown start-->
-				<div class="dropdown wow flipInX center"  data-wow-duration="1.2s" data-wow-delay="0.5">
+				<div id="backend-csharp-dotnet-core-developer" class="dropdown wow flipInX center"  data-wow-duration="1.2s" data-wow-delay="0.5">
 					<div class="vacancy__item dropdown-item display-flex align-center justify-space-between">
-						<h4 class="like-h4">Backend C# .NET Core Developer</h4>
+						<a href="#backend-csharp-dotnet-core-developer">
+							<h4 class="like-h4">Backend C# .NET Core Developer</h4>
+						</a>
 						<div class="icon">
 							<span>+</span>
 							<span class="hide">−</span>
@@ -177,9 +181,11 @@
 				</div>
 				<!--dropdown end-->
 				<!--dropdown start-->
-				<div class="dropdown wow flipInX center" data-wow-delay="1" data-wow-duration="1.2s">
+				<div id="csharp-and-solidity-software-engineer" class="dropdown wow flipInX center" data-wow-delay="1" data-wow-duration="1.2s">
 					<div class="vacancy__item dropdown-item display-flex align-center justify-space-between">
-						<h4 class="like-h4">C# and Solidity Software Engineer</h4>
+						<a href="#csharp-and-solidity-software-engineer">
+							<h4 class="like-h4">C# and Solidity Software Engineer</h4>
+						</a>
 						<div class="icon">
 							<span>+</span>
 							<span class="hide">−</span>
@@ -225,9 +231,11 @@
 				</div>
 				<!--dropdown-end-->
 				<!--dropdown start-->
-				<div class="dropdown wow flipInX center" data-wow-delay="1" data-wow-duration="1.2s">
+				<div id="product-designer" class="dropdown wow flipInX center" data-wow-delay="1" data-wow-duration="1.2s">
 					<div class="vacancy__item dropdown-item display-flex align-center justify-space-between">
-						<h4 class="like-h4">Product Designer</h4>
+						<a href="#product-designer">
+							<h4 class="like-h4">Product Designer</h4>
+						</a>
 						<div class="icon">
 							<span>+</span>
 							<span class="hide">−</span>
@@ -266,9 +274,11 @@
 				</div>
 				<!--dropdown-end-->
 				<!--dropdown start-->
-				<div class="dropdown wow flipInX center" data-wow-delay="1" data-wow-duration="1.2s">
+				<div id="devops-engineer" class="dropdown wow flipInX center" data-wow-delay="1" data-wow-duration="1.2s">
 					<div class="vacancy__item dropdown-item display-flex align-center justify-space-between">
-						<h4 class="like-h4">DevOps Engineer</h4>
+						<a href="#devops-engineer">
+							<h4 class="like-h4">DevOps Engineer</h4>
+						</a>
 						<div class="icon">
 							<span>+</span>
 							<span class="hide">−</span>
@@ -438,6 +448,9 @@
             $("#breadcrumbs").rcrumbs();
             
             // dropdown for vacancy
+			
+			$(window.location.hash).find('.dropdown__open').show(400);
+			$(window.location.hash).addClass('active');
 
             $(".dropdown .dropdown-item").click(function(){
 				if ( $(this).parent('.dropdown').find(".dropdown__open").css('display') == 'none' ) {

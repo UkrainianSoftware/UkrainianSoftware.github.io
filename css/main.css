@@ -1830,6 +1830,8 @@ textarea {
     -o-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out;
     margin-bottom: 15px; }
+    .vacancy__item a {
+      color: inherit; }
     .vacancy__item .like-h4 {
       position: relative;
       padding: 15px 35px;
